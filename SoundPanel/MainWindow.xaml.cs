@@ -726,8 +726,6 @@ namespace SoundPanel
             {
                 fileName = saveFileDialog.FileName;
 
-                var t = "test";
-
                 Data buttonPresets = new Data();
                 buttonPresets.DataPaths = dataPaths;
                 buttonPresets.KeyBindingList = MIDIAssignmentList;
