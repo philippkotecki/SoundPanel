@@ -247,65 +247,6 @@ namespace SoundPanel
             }
         }
 
-
-
-        //private void Learn_MIDI(MidiIn midiIn)
-        //{
-        //    midiIn.MessageReceived += midiIn_MessageAssigned;
-        //    //if (e.MidiEvent.CommandCode == MidiCommandCode.NoteOn)
-        //    //{
-        //    //    NoteEvent ne;
-        //    //    ne = (NoteEvent)e.MidiEvent;
-        //    //    MessageBox.Show(ne.NoteNumber.ToString());
-        //    //    return ne.NoteNumber;
-
-        //    //}
-        //    //return 0;
-        //}
-
-        //private void PlaySound()
-        //{
-        //    if (!dataPaths[btnIndexes[0]].Equals("") || !dataPaths[btnIndexes[0]].Equals(null))
-        //    {
-        //        SoundPlayer soundplayer = new SoundPlayer(soundLocation: dataPaths[btnIndexes[0]]);
-        //        soundplayer.Play();
-        //    }
-        //}
-
-
-
-        
-
-        ///// RELATIVE PATH
-        //string paths = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-        ////string folderName = AppDomain.CurrentDomain.BaseDirectory;
-        //string sp1location = System.IO.Path.Combine(paths, $@"../Sounds/dubstepsnare.wav");
-        //SoundPlayer soundplayer1 = new SoundPlayer(soundLocation: sp1location);
-
-        //private string midiAssignment_1 = "Not assigned";
-        //public string MIDIAssignment_1
-        //{
-        //    get => midiAssignment_1;
-        //    set
-        //    {
-        //        midiAssignment_1 = value;
-        //        this.RaisePropertyChanged();
-        //    }
-        //}
-
-        //private string midiAssignment_2 = "Not assigned";
-        //public string MIDIAssignment_2
-        //{
-        //    get => midiAssignment_2;
-        //    set
-        //    {
-        //        midiAssignment_2 = value;
-        //        this.RaisePropertyChanged();
-        //    }
-        //}
-
-
-
         private void Learn_Button_Click(object sender, RoutedEventArgs e)
         {
             // MAYBE SOLVABLE LIKE INITALIZEBUTTON
@@ -586,8 +527,6 @@ namespace SoundPanel
             }
         }
 
-
-
         private void PlayWithKeyboard(object sender, KeyEventArgs e)
         {
             // Only play when no learn button is activated
@@ -689,12 +628,6 @@ namespace SoundPanel
             }
         }
 
-        //private string assignMidiButton(NoteEvent ne)
-        //{
-        //    return $"MIDI {ne.NoteNumber.ToString()}";
-        //}
-
-
         private delegate void dResetLearnButtonColors(Button learnButton);
 
         private void resetLearnButtonColors(Button learnButton)
@@ -702,7 +635,6 @@ namespace SoundPanel
             learnButton.Background = Brushes.BlueViolet;
             learnButton.Foreground = Brushes.White;
         }
-
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
