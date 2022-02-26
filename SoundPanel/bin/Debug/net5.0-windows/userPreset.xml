@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DataPaths>
+    <string>C:\Users\kotec\Documents\Sample Libraries\Electronic Music\Yummy Tunes Presents - Psytrance Vengeance by Vandeta\Kicks\Vandeta Kick 1.wav</string>
+    <string>C:\Users\kotec\Documents\Sample Libraries\Electronic Music\Yummy Tunes Presents - Psytrance Vengeance by Vandeta\Kicks\Vandeta Kick 2.wav</string>
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+  </DataPaths>
+  <ButtonContentList>
+    <anyType xsi:type="xsd:string">Vandeta Kick 1.wav</anyType>
+    <anyType xsi:type="xsd:string">Vandeta Kick 2.wav</anyType>
+    <anyType xsi:type="xsd:string">Drop .wav file here</anyType>
+    <anyType xsi:type="xsd:string">Drop .wav file here</anyType>
+    <anyType xsi:type="xsd:string">Drop .wav file here</anyType>
+    <anyType xsi:type="xsd:string">Drop .wav file here</anyType>
+    <anyType xsi:type="xsd:string">Drop .wav file here</anyType>
+    <anyType xsi:type="xsd:string">Drop .wav file here</anyType>
+    <anyType xsi:type="xsd:string">Drop .wav file here</anyType>
+    <anyType xsi:type="xsd:string">Drop .wav file here</anyType>
+    <anyType xsi:type="xsd:string">Drop .wav file here</anyType>
+    <anyType xsi:type="xsd:string">Drop .wav file here</anyType>
+    <anyType xsi:type="xsd:string">Drop .wav file here</anyType>
+    <anyType xsi:type="xsd:string">Drop .wav file here</anyType>
+    <anyType xsi:type="xsd:string">Drop .wav file here</anyType>
+    <anyType xsi:type="xsd:string">Drop .wav file here</anyType>
+  </ButtonContentList>
+  <KeyBindingList>
+    <string>A</string>
+    <string>F</string>
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+  </KeyBindingList>
+</Data>
