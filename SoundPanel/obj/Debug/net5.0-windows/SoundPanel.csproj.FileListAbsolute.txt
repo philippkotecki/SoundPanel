@@ -31,3 +31,6 @@ C:\Users\kotec\source\repos\SoundPanel\SoundPanel\obj\Debug\net5.0-windows\Sound
 C:\Users\kotec\source\repos\SoundPanel\SoundPanel\bin\Debug\net5.0-windows\Serilog.dll
 C:\Users\kotec\source\repos\SoundPanel\SoundPanel\obj\Debug\net5.0-windows\App.baml
 C:\Users\kotec\source\repos\SoundPanel\SoundPanel\obj\Debug\net5.0-windows\Resources\StyleTemplates.baml
+C:\Users\kotec\source\repos\SoundPanel\SoundPanel\obj\Debug\net5.0-windows\Resources\DarkTheme.baml
+C:\Users\kotec\source\repos\SoundPanel\SoundPanel\obj\Debug\net5.0-windows\Resources\DarkTheme.g.cs
+C:\Users\kotec\source\repos\SoundPanel\SoundPanel\obj\Debug\net5.0-windows\Resources\StyleTemplates.g.cs

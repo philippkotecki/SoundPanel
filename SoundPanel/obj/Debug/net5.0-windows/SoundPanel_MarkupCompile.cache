@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Users\kotec\source\repos\SoundPanel\SoundPanel\App.xaml
-21129525857
+332970312
 
-6-884618717
+8-1815811437
 209-420166839
-MainWindow.xaml;Resources\StyleTemplates.xaml;
+MainWindow.xaml;Resources\DarkTheme.xaml;Resources\StyleTemplates.xaml;
 
 False
 

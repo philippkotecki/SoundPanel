@@ -71,6 +71,7 @@ namespace SoundPanel
 
             // Arm selected MIDI controller to receive MIDI signals from
             // Listen to MIDI messages
+            //var midiIn2 = midiIn;
             midiIn = new MidiIn(comboBoxMidiInDevices.SelectedIndex);
             midiIn.MessageReceived += midiIn_MessageReceived;
             midiIn.Start();

@@ -8,7 +8,8 @@
         Title="Lil'Sample Player" Height="700" Width="800"
         Loaded="WindowLoaded"
         MinHeight="650"
-        MinWidth="800">
+        MinWidth="800"
+        Style="{StaticResource CustomWindowStyle}">
     <Window.Resources>
         
 
@@ -39,13 +40,13 @@
 
     <Grid x:Name="windowGrid" Background="#FF350080">
         <Grid.RowDefinitions>
-            <RowDefinition Height="18"/>
+            <RowDefinition Height="27"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
 
         <DockPanel Grid.Row="0">
-            <Menu DockPanel.Dock="Top"  Background="#2E223B">
-                <MenuItem Header="File" Foreground="White">
+            <Menu Style="{StaticResource MenuBar}" DockPanel.Dock="Top" Height="25">
+                <MenuItem Style="{DynamicResource MenuItemStyle}" Header="File" Foreground="White" Height="25" FontSize="14">
                     <MenuItem Header="Save Preset" Click="SavePreset_Click" Foreground="White"/>
                     <MenuItem Header="Load Preset" Click="LoadPreset_Click" Foreground="White"/>
                 </MenuItem>
@@ -68,9 +69,9 @@
             <RowDefinition MaxHeight="60"/>
         </Grid.RowDefinitions>
 
-        <Label Style="{StaticResource Header}" Content="Sample Player 3000" FontSize="20" Foreground="White" HorizontalAlignment="Center" Grid.Row="0" Grid.ColumnSpan="4" Margin="13"></Label>
-        
-        <!-- ROW 1 -->
+            <Label Style="{StaticResource Header}" Content="Sample Player 3000" FontSize="20" Foreground="White" HorizontalAlignment="Center" Grid.Row="0" Grid.ColumnSpan="4" Margin="13"/>
+
+            <!-- ROW 1 -->
         
         <StackPanel Grid.Row="1" Grid.Column="0" Margin="10">
             <Button Style="{StaticResource SampleButton}" Template="{DynamicResource SampleButtonTemplate}" Content="" Click="Button_Click" Drop="DropFile" x:Name="btn_0"/>
@@ -225,7 +226,7 @@
             </StackPanel>
         </StackPanel>
 
-        <Label Content="{Binding MIDIState}" Foreground="White"/>
+        <!--<Label Content="{Binding MIDIState}" Foreground="White"/>-->
 
         <ComboBox Template="{DynamicResource ComboBoxMIDI}" Style="{StaticResource MIDIController}" x:Name="comboBoxMidiInDevices" Grid.ColumnSpan="4" Grid.Row="5" HorizontalAlignment="Center" Width="200" Height="20" />
 
