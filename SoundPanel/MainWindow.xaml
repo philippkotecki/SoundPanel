@@ -196,18 +196,16 @@
             </StackPanel>
         </StackPanel>
 
-        <StackPanel Grid.Row="4" Grid.Column="3" Margin="10">
-            <Button Style="{StaticResource SampleButton}" Template="{DynamicResource SampleButtonTemplate}" Content="" Click="Button_Click" Drop="DropFile" x:Name="btn_15"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button Style="{StaticResource LearnButton}" Template="{DynamicResource LearnButtonTemplate}" x:Name="LearnButton_15"
+            <StackPanel Grid.Row="4" Grid.Column="3" Margin="10">
+                <Button Style="{StaticResource SampleButton}" Template="{DynamicResource SampleButtonTemplate}" Content="" Click="Button_Click" Drop="DropFile" x:Name="btn_15"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button Style="{StaticResource LearnButton}" Template="{DynamicResource LearnButtonTemplate}" x:Name="LearnButton_15"
                         Content="Learn" Click="Learn_Button_Click" KeyDown="LearnButton_KeyDown"/>
-                <Label Content="{Binding MIDIAssignmentList[15]}" Foreground="White"/>
+                    <Label Content="{Binding MIDIAssignmentList[15]}" Foreground="White"/>
+                </StackPanel>
             </StackPanel>
-        </StackPanel>
 
-        <!--<Label Content="{Binding MIDIState}" Foreground="White"/>-->
-
-        <ComboBox Template="{DynamicResource ComboBoxMIDI}" Style="{StaticResource MIDIController}" x:Name="comboBoxMidiInDevices" Grid.ColumnSpan="4" Grid.Row="5" HorizontalAlignment="Center" Width="200" Height="20" />
+            <ComboBox Template="{DynamicResource ComboBoxMIDI}" Style="{StaticResource MIDIController}" x:Name="comboBoxMidiInDevices" Grid.ColumnSpan="4" Grid.Row="5" HorizontalAlignment="Center" Width="200" Height="20" />
 
     </Grid>
 

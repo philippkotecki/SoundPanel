@@ -106,17 +106,6 @@ namespace SoundPanel
             allLearnButtons.Add(LearnButton_15);
         }
 
-        private string midiState = "false";
-        public string MIDIState
-        {
-            get => midiState;
-            set
-            {
-                midiState = value;
-                this.RaisePropertyChanged();
-            }
-        }
-
         private NoteEvent ne;
 
         // Helper to just use NoteOn signals to trigger further functions
