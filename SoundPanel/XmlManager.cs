@@ -3,6 +3,8 @@ using System.Xml.Serialization;
 
 namespace SoundPanel
 {
+
+    // Class for writing and reading serialized xml files. This is used for presets
     public class XmlManager
     {
         public static void XmlDataWriter(object obj, string filename)

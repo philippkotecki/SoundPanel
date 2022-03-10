@@ -4,27 +4,15 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.Media;
-using System.Reflection;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using Microsoft.Win32;
-//using Microsoft.VisualBasic.Logging;
-using NAudio;
 using NAudio.Midi;
-using Serilog;
 
 namespace SoundPanel
 {
@@ -69,12 +57,7 @@ namespace SoundPanel
                 comboBoxMidiInDevices.SelectedIndex = 0;
             }
 
-            // Arm selected MIDI controller to receive MIDI signals from
-            // Listen to MIDI messages
-            //var midiIn2 = midiIn;
-            midiIn = new MidiIn(comboBoxMidiInDevices.SelectedIndex);
-            midiIn.MessageReceived += midiIn_MessageReceived;
-            midiIn.Start();
+            StartMonitoringMidi(ref midiIn);
         }
 
 
@@ -140,15 +123,14 @@ namespace SoundPanel
         private bool midiNoteState = false;
 
 
-
-
-
-        //private void StartMonitoringMidi()
-        //{
-        //    MidiIn midiDevice = new MidiIn(comboBoxMidiInDevices.SelectedIndex);
-        //    //midiDevice.MessageReceived += new EventHandler<MidiInMessageEventArgs>(midiDevice.MessageReceived);
-        //    midiDevice.Start();
-        //}
+        // Arm selected MIDI controller to receive MIDI signals from
+        // Listen to MIDI messages
+        private void StartMonitoringMidi(ref MidiIn midiDevice)
+        {
+            midiDevice = new MidiIn(comboBoxMidiInDevices.SelectedIndex);
+            midiDevice.MessageReceived += midiIn_MessageReceived;
+            midiDevice.Start();
+        }
 
         private void InitializeButtons(int padCount)
         {

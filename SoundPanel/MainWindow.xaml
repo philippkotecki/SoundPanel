@@ -11,28 +11,7 @@
         MinWidth="800"
         Style="{StaticResource CustomWindowStyle}">
     <Window.Resources>
-        
 
-        <!--<Style TargetType="Button" x:Key="LearnButton">
-            <Setter Property="Background" Value="BlueViolet"/>
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="Width" Value="40"/>
-            <Setter Property="AllowDrop" Value="True"/>
-            <Setter Property="Margin" Value="0 5"/>
-            <Setter Property="BorderBrush" Value="Black"/>
-            <Setter Property="BorderThickness" Value="1"/>
-            <Setter Property="ToolTip" Value="Assign a key on your keyboard or MIDI-Controller to play this sample"/>
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="MediumSlateBlue"/>
-                </Trigger>
-            </Style.Triggers>
-        </Style>
-        <ControlTemplate TargetType="Button" x:Key="LearnMouseOver">
-            <Border Width="40" CornerRadius="3" Background="{TemplateBinding Background}">
-                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            </Border>
-        </ControlTemplate>-->
     </Window.Resources>
     
     <!-- Background="#350080" -->
